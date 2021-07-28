@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "name": "For You"
+  },
+  {
+    "id": 1,
+    "name": "Burger"
+  },
+  {
+    "id": 2,
+    "name": "Chicken"
+  },
+  {
+    "id": 3,
+    "name": "Pizza"
+  },
+  {
+    "id": 4,
+    "name": "Desserts"
+  },
+  {
+    "id": 5,
+    "name": "Bread"
+  },
+  {
+    "id": 6,
+    "name": "Drinks"
+  },
+  {
+    "id": 7,
+    "name": "Snacks"
+  }
+]
