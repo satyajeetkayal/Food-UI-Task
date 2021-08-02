@@ -70,5 +70,13 @@
     "description": "a fried fries with dips.",
     "Price": 15,
     "categories": [7, 0]
+  },
+  {
+    "id": 10,
+    "name": "Sandwich",
+    "imageUrl": "https://simply-delicious-food.com/wp-content/uploads/2020/07/Easy-salad-sandwiches-with-herb-mayo-5.jpg",
+    "description": "A sandwich is a food consisting of vegetables,cheese.",
+    "Price": 15,
+    "categories": [7, 0]
   }
 ]

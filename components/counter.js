@@ -19,12 +19,7 @@ const counter = () => {
   };
 
   return (
-    <View
-      style={{
-        flexDirection: 'row-reverse',
-        bottom: 10,
-        right: 20,
-      }}>
+    <View style={styles.mainContainer}>
       <TouchableOpacity onPress={handleIncrement}>
         <Icon name="add-circle" size={25} color={'orange'} />
       </TouchableOpacity>
@@ -38,4 +33,10 @@ const counter = () => {
 
 export default counter;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  mainContainer: {
+    flexDirection: 'row-reverse',
+    bottom: 10,
+    right: 20,
+  },
+});

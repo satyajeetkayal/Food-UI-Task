@@ -1,6 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, Dimensions} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const header = () => {
   const headerUrl =
@@ -8,40 +12,28 @@ const header = () => {
   return (
     <>
       <View style={styles.mainContainer}>
-        <View
-          style={{
-            flexDirection: 'row',
-          }}>
+        <View style={styles.ContainerView1}>
           <Image
             source={{
               uri: headerUrl,
             }}
-            style={{
-              height: 200,
-              width: Dimensions.get('screen').width,
-              aspectRatio: 1.9,
-              resizeMode: 'cover',
-            }}
+            style={styles.imageContainer}
           />
-          <View
-            style={{
-              position: 'absolute',
-              flexDirection: 'row',
-            }}>
+          <View style={styles.iconContainer}>
             <Icon
-              style={{top: 30, left: 10}}
+              style={styles.icon1}
               name="chevron-back-outline"
               size={25}
               color="white"
             />
             <Icon
-              style={{top: 30, left: 260}}
+              style={styles.icon2}
               name="search-outline"
               size={25}
               color="white"
             />
             <Icon
-              style={{top: 30, left: 275}}
+              style={styles.icon3}
               name="share-outline"
               size={25}
               color="white"
@@ -65,5 +57,30 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     elevation: 4,
+  },
+  imageContainer: {
+    height: hp('100%'),
+    width: Dimensions.get('window').width,
+    aspectRatio: 1.9,
+    resizeMode: 'cover',
+  },
+  ContainerView1: {
+    flexDirection: 'row',
+  },
+  iconContainer: {
+    position: 'absolute',
+    flexDirection: 'row',
+  },
+  icon1: {
+    top: 30,
+    left: 10,
+  },
+  icon2: {
+    top: 30,
+    left: Dimensions.get('window').width - 100,
+  },
+  icon3: {
+    top: 30,
+    left: Dimensions.get('window').width - 80,
   },
 });
